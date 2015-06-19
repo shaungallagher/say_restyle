@@ -8,6 +8,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -15,27 +17,36 @@
 
     <style>
         body {
-            margin: 20px 10%;
+            margin: 0;
         }
-        .header p {
+        .header {
+            margin-bottom: 30px;
+            padding: 20px 10%;
+            background-color: #3399DD;
+            color: white;
+        }
+        .header a, .footer a {
+            font-weight: bold;
+            color: rgb(210, 245, 255);
+        }
+        .header p, .footer p {
             font-size: 120%;
-            padding: 15px 0;
+        }
+        .header .title {
+            margin-bottom: 16px;
         }
         .sidebar {
-            background-color: #EEE;
+            background-color: #CEF;
             border-radius: 5px;
             padding: 10px 20px;
             width: 40%;
             float: right;
         }
-        .sidebar hr {
-            border-top: 1px solid #DDD;
-        }
         .commands p {
             margin-left: 20px;
         }
         .commands .note {
-            color: #093;
+            color: #077;
             padding-left: 8px;
             display: block;
         }
@@ -46,11 +57,15 @@
             max-width: 800px;
             width: 100%;
         }
-        .container {
+        .main_container {
             overflow: auto;
+            margin: 20px 10%;
         }
         .footer {
             margin-top: 60px;
+            padding: 20px 10%;
+            background-color: #3399DD;
+            color: white;
         }
     </style>
 
@@ -59,19 +74,19 @@
 
     <div class="header">
 
-        <h1>Edit this webpage with your voice</h1>
+        <h1 class="title page-title">Edit this webpage with your voice</h1>
 
         <p>If you're using a browser that supports the <a href="http://caniuse.com/#feat=web-speech">Web Speech API</a> (e.g. Chrome, Safari, Opera), you can edit this webpage by speaking your commands, and you can inspect page elements by having the information spoken to you.</p>
 
+        <p><b>Tips:</b> Speak slowly and clearly.  Open your developer console to see what's going on under the hood.</p>
+
     </div>
 
-    <div class="container">
+    <div class="main_container">
 
         <div class="sidebar">
 
             <h3>Commands you can speak</h3>
-
-                <hr/>
 
                 <div class="commands">
 
@@ -81,12 +96,16 @@
                        <span class="note">Ex: "select the header"</span>
                        <span class="note">Ex: "select the footer"</span></p>
                     <p>Select the largest image</p>
+                    <p>Select the text (text)
+                        <span class="note">Ex: "select the text GET INFORMATION"</span>
+                        <span class="note">Ex: "select the text WITH YOUR VOICE"</span></p>
 
                     <p>Select its parent</p>
                     <p>Select its first child</p>
                     <p>Select its last child</p>
                     <p>Select the next sibling</p>
                     <p>Select the previous sibling</p>
+
 
                     <h4>Text replacement</h4>
 
@@ -116,28 +135,28 @@
 
         <div class="body">
             <p class="image">
-                <img src="http://lorempixel.com/400/400/" />
+                <img src="https://placehold.it/400x350" />
             </p>
             <p class="image">
-                <img src="http://lorempixel.com/400/100/" />
+                <img src="https://placehold.it/400x150" />
             </p>
             <p class="image">
-                <img src="http://lorempixel.com/400/100/" />
+                <img src="https://placehold.it/400x150" />
             </p>
             <p class="image">
-                <img src="http://lorempixel.com/400/100/" />
+                <img src="https://placehold.it/400x150" />
             </p>
             <p class="image">
-                <img src="http://lorempixel.com/400/100/" />
+                <img src="https://placehold.it/400x150" />
             </p>
         </div>
 
     </div>
 
     <div class="footer">
-        <hr />
         <p>Created by Shaun Gallagher as part of Hack Days at <a href="http://wwww.monetate.com">Monetate</a>.</p>
         <p>Source code is here: <a href="https://github.com/shaungallagher/say_restyle">https://github.com/shaungallagher/say_restyle</a>.</p>
+        <p>Check out my other Hack Days project: <a href="https://github.com/shaungallagher/cheryls-murder/blob/master/cheryls-murder.ipynb">Murdering Cheryl: How to generate and solve logical deduction problems</a></p>
     </div>
 
 </body>
