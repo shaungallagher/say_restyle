@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title>DEMO: Edit this webpage with your voice</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="say_restyle.js"></script>
+
+    <style>
+        body {
+            margin: 20px 10%;
+        }
+        .header p {
+            font-size: 120%;
+            padding: 15px 0;
+        }
+        .sidebar {
+            background-color: #EEE;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 40%;
+            float: right;
+        }
+        .sidebar hr {
+            border-top: 1px solid #DDD;
+        }
+        .commands p {
+            margin-left: 20px;
+        }
+        .commands .note {
+            color: #093;
+            padding-left: 8px;
+            display: block;
+        }
+        .body {
+            width: 55%;
+        }
+        .body .image img {
+            max-width: 800px;
+            width: 100%;
+        }
+        .container {
+            overflow: auto;
+        }
+        .footer {
+            margin-top: 60px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+
+        <h1>Edit this webpage with your voice</h1>
+
+        <p>If you're using a browser that supports the <a href="http://caniuse.com/#feat=web-speech">Web Speech API</a> (e.g. Chrome, Safari, Opera), you can edit this webpage by speaking your commands, and you can inspect page elements by having the information spoken to you.</p>
+
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h3>Commands you can speak</h3>
+
+                <hr/>
+
+                <div class="commands">
+
+                    <h4>Element selection</h4>
+
+                    <p>Select the (element)
+                       <span class="note">Ex: "select the header"</span>
+                       <span class="note">Ex: "select the footer"</span></p>
+                    <p>Select the largest image</p>
+
+                    <p>Select its parent</p>
+                    <p>Select its first child</p>
+                    <p>Select its last child</p>
+                    <p>Select the next sibling</p>
+                    <p>Select the previous sibling</p>
+
+                    <h4>Text replacement</h4>
+
+                    <p>Change the text to (value)</p>
+                    <p>Replace the text with (value)</p>
+
+                    <h4>Style changes</h4>
+
+                    <p>Change the (style) to (value)
+                        <span class="note">Ex: "change the z-index to 2"</span>
+                        <span class="note">Ex: "change the font size to 12px"</span></p>
+                    <p>Hide it</p>
+                    <p>Show it</p>
+                    <p>Shake things up</p>
+
+                    <h4>Get information</h4>
+
+                    <p>Tell me its (style)
+                        <span class="note">Ex: "tell me its width"</span>
+                        <span class="note">Ex: "tell me its font weight"</span></p>
+                    <p>Print the change log
+                        <span class="note"><i>(this appears in the developer console)</i></span></p>
+
+                </div>
+
+        </div>
+
+        <div class="body">
+            <p class="image">
+                <img src="http://lorempixel.com/400/400/" />
+            </p>
+            <p class="image">
+                <img src="http://lorempixel.com/400/100/" />
+            </p>
+            <p class="image">
+                <img src="http://lorempixel.com/400/100/" />
+            </p>
+            <p class="image">
+                <img src="http://lorempixel.com/400/100/" />
+            </p>
+            <p class="image">
+                <img src="http://lorempixel.com/400/100/" />
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <hr />
+        <p>Created by Shaun Gallagher as part of Hack Days at <a href="http://wwww.monetate.com">Monetate</a>.</p>
+    </div>
+
+</body>
+</html>
